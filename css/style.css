@@ -15,7 +15,7 @@
 
 body {
     width: 100%;
-    height: 100vh;
+    height: 100%;
     background-color: black;
     color: white;
 }
@@ -30,6 +30,7 @@ header {
     justify-content: space-between;
     width: 100%;
     background-color: #171616;
+    z-index: 1;
 }
 
 header .info {
@@ -97,7 +98,7 @@ header .pesquisa button:hover {
 main {
     margin-top: 150px;
     width: 100%;
-    height: 100vh;
+    height: 100%;
 }
 
 /* --------- Produto Destaque --------- */
@@ -233,7 +234,8 @@ main {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    width: 100%;
+    width: 200px;
+    height: 250px;
     gap :10px;
     border: var(--secundaria) 1px solid;
     border-radius: 10px;
@@ -255,6 +257,8 @@ main {
     align-items: center;
     gap: 2px;
     font-style: italic;
+    font-size: 20px;
+    margin: 5px;
 }
 
 .produto .preco span {
@@ -283,6 +287,18 @@ main {
     height: 130px;
 }
 
+footer .logo img {
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    border-radius: 10px;
+    width: 45%;
+    height: 45%;
+    margin: 0;
+    box-shadow: #ffffff 0px 0px 10px;
+    margin: 10px;
+}
+
 /*link*/
 
 .link {
@@ -295,6 +311,7 @@ main {
     cursor: pointer;
     color: var(--secundaria);
     margin: 10px;
+    margin-top: 30px;
 }
 
 /*sobre*/
@@ -308,4 +325,52 @@ main {
     font-size: 15px;
     margin: 10px;
     width: 50%;
+}
+
+/* ---------------------Footer--------------------- */
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 10px;
+    gap :10px;
+}
+
+footer .logo {
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    justify-content: center;
+    border-radius: 10px;
+    width: 50%;
+    height: 50%;
+}
+
+.links ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    list-style: none;
+    margin: 10px;
+}
+
+.links ul li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 20px;
+    list-style: none;
+    text-decoration: none;
+    background-color: var(--preto);
+    border-radius: 10px;
+    padding: 10px;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: normal;
+    font-style: normal;
 }

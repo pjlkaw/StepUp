@@ -17,22 +17,21 @@
                 <ul>
                     <!--Sobre-->
                     <li>
-                        <i class="fa-solid fa-house"></i>
-                        
+                        <i id="homeIcon" class="fa-solid fa-house"></i>
                     </li>
                     <!--Home-->
                     <li>
-                        <i class="fa-solid fa-circle-info"></i>
+                        <i id="sobreIcon" class="fa-solid fa-circle-info"></i>
                     </li>
                     <!--Perfil-->
                     <li>
-                        <i class="fa-solid fa-circle-user"></i>   
+                        <i id="perfilIcon" class="fa-solid fa-circle-user"></i>   
                     </li>
                 </ul>
             </nav>
             <div class="pesquisa">
                 <input type="text" placeholder="Pesquisar...">
-                <button>
+                <button id="pesquisar">
                     <i class="fa-solid fa-magnifying-glass"></i>
                 </button>    
             </div>
@@ -42,11 +41,9 @@
     <main>
         <div class="container_destaque">
             <div class="produtoDestaque">
-
                 <div class="img">
                     <img class="imgDestaque" src="assets/tenis_nike.avif" alt="">
                 </div>
-    
                 <div class="infos">
                     <h2>Tênis Nike Air Force</h2>
                     <div class="preco">
@@ -55,7 +52,7 @@
                     </div>
                     <div class="estrelas">
                         <i id="estrela" class="fa-solid fa-star"></i>
-                        <i id="estrela"class="fa-solid fa-star"></i>
+                        <i id="estrela" class="fa-solid fa-star"></i>
                         <i id="estrela" class="fa-solid fa-star"></i>
                         <i id="estrela" class="fa-solid fa-star"></i>
                         <i id="estrela" class="fa-solid fa-star-half-stroke"></i>
@@ -74,76 +71,9 @@
             </div>
         </div>
 
-        <div class="produtos">
-
-            <div class="produtoCard">
-                <div class="produto">
-                    <img class="imgProduto" src="assets/tenis_nike.avif" alt="">
-                    <div class="info">
-                        <h3>Tênis Nike Air Force</h3>
-                        <div class="preco">
-                            <span>R$</span>
-                            <h3>599,90</h3> 
-                        </div>   
-                    </div>
-                </div>
-            </div>
-
-            <div class="produtoCard">
-                <div class="produto">
-                    <img class="imgProduto" src="assets/tenis_nike.avif" alt="">
-                    <div class="info">
-                        <h3>Tênis Nike Air Force</h3>
-                        <div class="preco">
-                            <span>R$</span>
-                            <h3>599,90</h3> 
-                        </div>   
-                    </div>
-                </div>
-            </div>
-
-            <div class="produtoCard">
-                <div class="produto">
-                    <img class="imgProduto" src="assets/tenis_nike.avif" alt="">
-                    <div class="info">
-                        <h3>Tênis Nike Air Force</h3>
-                        <div class="preco">
-                            <span>R$</span>
-                            <h3>599,90</h3> 
-                        </div>   
-                    </div>
-                </div>
-            </div>
-
-            <div class="produtoCard">
-                <div class="produto">
-                    <img class="imgProduto" src="assets/tenis_nike.avif" alt="">
-                    <div class="info">
-                        <h3>Tênis Nike Air Force</h3>
-                        <div class="preco">
-                            <span>R$</span>
-                            <h3>599,90</h3> 
-                        </div>   
-                    </div>
-                </div>
-            </div>
-
-            <div class="produtoCard">
-                <div class="produto">
-                    <img class="imgProduto" src="assets/tenis_nike.avif" alt="">
-                    <div class="info">
-                        <h3>Tênis Nike Air Force</h3>
-                        <div class="preco">
-                            <span>R$</span>
-                            <h3>599,90</h3> 
-                        </div>   
-                    </div>
-                </div>
-            </div>
-
-
-
-            
+        <!-- Produtos da API vão aparecer aqui -->
+        <div class="produtos" id="produtos">
+            <!-- Os cards da API vão ser inseridos aqui -->
         </div>
 
         <div class="link">
@@ -153,8 +83,7 @@
             </div>
         </div>
 
-
-        <div class="titulo">
+        <div class="titulo" id="sobre">
             <h2>Sobre</h2>
             <div class="arrow_icon">
                 <i class="fa-solid fa-angles-down"></i>
@@ -162,11 +91,29 @@
             <div class="sobre">
                 <p>A <strong>StepUp</strong> nasceu com o propósito de dar mais estilo e autenticidade ao seu dia a dia. 
                     Nosso foco é oferecer os melhores tênis do mercado, com qualidade, conforto e atitude. Aqui você encontra desde os clássicos até os lançamentos mais desejados, sempre com um atendimento rápido e seguro. <br><br>
-                    Suba de nível com a gente. <span style="color: #A259FF;">StepUp é estilo que te leva longe.</p>    
+                    Suba de nível com a gente. <span style="color: #A259FF;">StepUp é estilo que te leva longe.</span></p>    
             </div>
         </div>
-
     </main>
 
+    <footer>
+        <div class="logo">
+            <img src="assets/STepUp_logo.png" alt="">
+        </div>
+        <div class="links">
+            <ul>
+                <li> 
+                    <a href="https://www.instagram.com">Instagram</a> 
+                    <i class="fa-brands fa-instagram"></i>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com">Facebook</a>
+                    <i class="fa-brands fa-facebook"></i>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
