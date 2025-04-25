@@ -381,7 +381,7 @@ footer .logo {
 /*---------------------Responsividade--------------------- */
 
 /*Celular*/
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 900px) {
     * {
     font-size: 20px;
     }
