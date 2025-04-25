@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
     header_icons();
     api();
+    clickproduto();
 });
 
 function header_icons () {
@@ -9,7 +10,16 @@ function header_icons () {
     });
 
     document.getElementById('sobreIcon').addEventListener('click', () => {
-        document.querySelector('.sobre').scrollIntoView({behavior: 'smooth'})
+        const sobre = document.getElementById('sobre');
+        sobre.scrollIntoView({behavior: 'smooth'})
+        sobre.style.display = 'flex';
+        sobre.style.borderRadius = '30px'; 
+        sobre.style.boxShadow = '0px 0px 10px rgba(255, 255, 255, 0.5)';
+        sobre.style.transition = 'box-shadow 0.5s ease-in-out';
+        setTimeout(() => {
+            sobre.style.boxShadow = 'none';
+        }, 1000)
+
     });
 
     document.getElementById('perfilIcon').addEventListener('click', () => {
@@ -56,4 +66,10 @@ function api () {
         .catch(error => {
             console.error('Erro ao buscar produtos:', error);
         });
+}
+
+function clickproduto () {
+    document.getElementById('produto').addEventListener('click', () => {
+        alert('A página produto não existe, estamos trabalhando nisso')
+    })
 }

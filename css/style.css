@@ -105,10 +105,18 @@ main {
 
 .container_destaque {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 100%;
     height: 20fr;
+}
+
+.container_destaque h1 {
+    background: linear-gradient(to bottom, var(--secundaria), #171616);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
 }
 
 .produtoDestaque {
@@ -214,9 +222,9 @@ main {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    width: 100%;
-    margin-top: 50px;
-    margin-bottom: 10px;
+    width: 0 auto;
+    margin: 20px;
+    padding: 5px;
     gap :10px;
 }
 
@@ -344,6 +352,7 @@ footer .logo img {
     font-size: 15px;
     margin: 10px;
     width: 50%;
+    padding: 5px;
 }
 
 /* ---------------------Footer--------------------- */
